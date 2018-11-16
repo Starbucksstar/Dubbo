@@ -4,7 +4,7 @@ import java.lang.annotation.*;
 
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ ElementType.FIELD })
+@Target(ElementType.FIELD)
 public @interface DubboConsumer
 {
 	String version() default "1.0.0";
@@ -12,8 +12,6 @@ public @interface DubboConsumer
 	String registry() default "";
 
 	int timeout() default 0;
-
-	String timeoutExp() default "";
 
 	boolean retries() default false;
 

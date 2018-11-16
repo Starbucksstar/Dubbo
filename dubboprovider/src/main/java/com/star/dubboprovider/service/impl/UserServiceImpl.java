@@ -1,11 +1,14 @@
 package com.star.dubboprovider.service.impl;
 
 import com.star.dubbo.annotation.DubboService;
-import com.star.dubboprovider.service.UserService;
+import com.star.user.service.UserService;
 import org.springframework.stereotype.Service;
 
-@Service
+/**
+ * @author gaoxing
+ */
 @DubboService
+@Service
 public class UserServiceImpl implements UserService
 {
 	@Override
@@ -20,5 +23,12 @@ public class UserServiceImpl implements UserService
 	{
 		System.out.println("age执行了一次");
 		return 25+name.length();
+	}
+
+	@Override
+	public String getUserPlace(int id)
+	{
+		System.out.println("place执行了一次");
+		return "武汉";
 	}
 }

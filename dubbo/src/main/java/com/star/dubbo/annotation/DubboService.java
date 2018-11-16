@@ -11,8 +11,6 @@ public @interface DubboService
 
 	int timeout() default 0;
 
-	String timeoutExp() default "";
-
 	boolean netty() default true;
 
 	boolean jetty() default false;

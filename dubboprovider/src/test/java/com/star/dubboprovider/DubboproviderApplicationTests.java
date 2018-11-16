@@ -1,5 +1,7 @@
 package com.star.dubboprovider;
 
+import com.star.dubboprovider.bean.MoreThread;
+import lombok.Data;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -11,6 +13,8 @@ public class DubboproviderApplicationTests {
 
 	@Test
 	public void contextLoads() {
+
 	}
+
 
 }
